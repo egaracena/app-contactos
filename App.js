@@ -24,7 +24,7 @@ export default function App() {
           //},
         }}
       >
-        <Stack.Screen name="Contactos" component={HomeScreen} options={{ headerLeft: () => null }} />
+        <Stack.Screen name="Agenda de Contactos TVU" component={HomeScreen} options={{ headerLeft: () => null }} />
         <Stack.Screen name="AgregarContacto" component={AddContactScreen} />
         <Stack.Screen name="DetallesContacto" component={ContactDetailScreen} />
         <Stack.Screen name="EditarContacto" component={EditContactScreen} />
