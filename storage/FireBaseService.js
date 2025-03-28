@@ -98,7 +98,7 @@ export const initializeAreas = async () => {
 
     if (querySnapshot.empty) {
       console.log("No hay áreas en la base de datos. Cargando áreas predefinidas...");
-      const defaultAreas = ["Económica", "Política", "Seguridad", "Universidad", "Laboral", "Televisión Universitaria"];
+      const defaultAreas = ["TELEVISIÓN UNIVERSITARIA"];
 
       defaultAreas.forEach(async (area) => {
         await setDoc(doc(db, "areas", area), { name: area });
