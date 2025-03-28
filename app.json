@@ -19,10 +19,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/logoTvu.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sushitrash01.appcontactos"
     },
     "web": {
       "favicon": "./assets/logoTvu.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "57645abe-5fbb-48ae-a375-d13a481bf9a6"
+      }
+    },
+    "owner": "sushitrash01"
   }
 }
