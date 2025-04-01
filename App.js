@@ -5,20 +5,28 @@ import HomeScreen from './screens/HomeScreen';
 import AddContactScreen from './screens/AddContactScreen';
 import ContactDetailScreen from './screens/ContactDetailScreen';
 import EditContactScreen from './screens/EditContactScreen';
+import { Image, View } from 'react-native'; // Importa Image y View
 
 
 const Stack = createStackNavigator();
+const LogoTitle = () => {
+  return (
+    <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+      <Image
+        style={{ width: 150, height: 50, resizeMode: 'contain' }} // Ajusta el tamaño según tus necesidades
+        source={require('./assets/logo tvu.png')} // Reemplaza con la ruta de tu imagen
+      />
+    </View>
+  );
+};
 
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerTitleStyle: {
-            fontSize: 30, // 🔥 Aumenta el tamaño del título
-            fontWeight: 'bold', // 🔥 Hace que el título sea más grueso
-            color: '#333', // 🎨 Color del título (opcional)
-          },
+          headerTitle: () => <LogoTitle />,
+          headerTitleAlign: 'center', 
           //headerStyle: {
             //backgroundColor: '#f8f8f8', // 🎨 Color de fondo del encabezado (opcional)
           //},

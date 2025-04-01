@@ -123,6 +123,8 @@ const HomeScreen = ({ navigation }) => {
       >
         {/* HEADER FIJO */}
         <View style={styles.header}>
+           <Text style={styles.title}>Agenda de Contactos TVU</Text>
+          
           <TextInput
             style={styles.searchInput}
             placeholder="Buscar contacto..."
