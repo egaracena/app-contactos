@@ -156,7 +156,7 @@ const ContactDetailScreen = ({ route }) => {
             currentContact.emails.map((email, index) => (
               <View key={index} style={styles.phoneContainer}>
                 <Text style={styles.info}>{email}</Text>
-                <TouchableOpacity style={styles.iconButtonc} onPress={() => copyToClipboard(phone)}>
+                <TouchableOpacity style={styles.iconButtonc} onPress={() => copyToClipboard(email)}>
                   <AntDesign name="copy1" size={20} color="white" />
                   {isDesktop &&<Text style={styles.buttonText}>Copiar</Text>}
                 </TouchableOpacity>              </View>
